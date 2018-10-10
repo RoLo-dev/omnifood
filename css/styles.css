@@ -39,7 +39,7 @@ html {
 }
 
 /* Header */
-header {
+#mainHeader {
   height: 100vh;
   position: relative;
   background-size: cover;
@@ -47,7 +47,10 @@ header {
   background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
 }
-#mobileNav {
+#mobileHeader {
+  display: none;
+}
+#mobileBanner {
   display: none;
 }
 .mainNav {
@@ -57,14 +60,20 @@ header {
   align-content: center;
   justify-content: space-between;
 }
+.mainNav .logo {
+  display: block;
+  width: 22%;
+}
 .mainNav .logo img {
-  width: 35%;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .mainNav .links ul {
   list-style: none;
 }
 .mainNav .links ul li {
-  margin-right: 1.5em;
+  margin-left: 1.5em;
   display: inline-block;
 }
 .mainNav .links ul li a {
@@ -139,7 +148,7 @@ header {
   text-align: justify;
 }
 
-/* Meals images */
+/* Meal images */
 .foodPics {
   display: grid;
   background-color: #000;
@@ -158,6 +167,11 @@ header {
   transform: scale(1);
   transition: transform 0.5s;
 }
+.meals img:active {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
 
 /* How it works */
 #howItWorks {
@@ -169,7 +183,7 @@ header {
   align-items: center;
   padding-bottom: 3.5em;
   margin: 5em auto 0 auto;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .phone img {
   width: 70%;
@@ -197,22 +211,26 @@ header {
 .worksText .list .listText {
   font-size: 1.1em;
 }
-.worksText .appStore .ios {
-  padding-right: 4em;
+.worksText .appStore {
+  width: 100%;
 }
-.worksText .appStore .ios img {
-  width: 138%;
+.worksText .appStore .ios {
+  width: 110%;
+  padding-right: 2em;
+}
+.worksText .appStore .android {
+  width: 85%;
 }
 
 /* Locations */
 .cities {
   display: flex;
   margin: 3.5em 0;
-  align-items: center;
-  justify-content: space-between;
+}
+.cities .city {
+  padding: 0 8px;
 }
 .cities .city .cityImg {
-  width: 85%;
   margin-bottom: 1em;
 }
 .cities .city .cityName {
@@ -245,15 +263,15 @@ header {
   color: #fff;
   display: flex;
   margin-top: 3.5em;
-  align-items: center;
   padding-bottom: 3.5em;
-  justify-content: space-between;
+}
+.testimonials .test {
+  padding: 0 8px;
 }
 .testimonials .test i {
   font-size: 1.5em;
 }
 .testimonials .test p {
-  width: 95%;
   margin-bottom: 1em;
 }
 .customer {

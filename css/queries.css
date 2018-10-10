@@ -1,0 +1,317 @@
+@media only screen and (max-width: 1259px) {
+    /* Header */
+    .textbox h1 {
+        font-size: 5.15em;
+        line-height: 105px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1128px) {
+    /* Header */
+    .textbox {
+        top: 27%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 982px) {
+    /* Universal Styles */
+    html {
+        font-size: 16px;
+    }
+
+    /* Header */
+    .mainNav .logo {
+        width: 24%;
+    }
+    .mainNav .links ul li {
+        margin-left: 1em;
+    }
+    .textbox {
+        left: 5%;
+    }
+
+    /* Get food fast - Not fast food */
+    .fourReasons .rsnText {
+        text-align: inherit;
+    }
+
+    /* How it works */
+    .worksBox {
+        width: 70%;
+    }
+    .worksText .appStore .ios {
+        width: 120%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+    /* Universal Styles */
+    .secTitle {
+        font-size: 2.5em;
+    }
+    /* Header */
+    #mainHeader {
+        height: 75vh;
+    }
+    .mainNav .logo {
+        width: 25%;
+    }
+    .textbox {
+        top: 31%;
+    }
+    .textbox h1 {
+        font-size: 4.45em;
+        line-height: 75px;
+    }
+    .textbox a .btn {
+        padding: 0.3em 2.5em;
+    }
+
+    /* Get food fast - Not fast food */
+    .fourReasons {
+        display: grid;
+        grid-gap: 1.5em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Meal images */
+    .foodPics {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* How it works */
+    .worksBox {
+        width: 75%;
+    }
+    .phone img {
+        width: 60%;
+    }
+    .worksText .appStore .ios {
+        width: 125%;
+    }
+
+    /* Locations */
+    .cities {
+        display: grid;
+        grid-gap: 1.75em;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cities .city {
+        padding: 0;
+    }
+
+    /* Testimonials */
+    .customer figure {
+        width: 22%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 630px) {
+    /* Universal Styles */
+    .secTitle {
+        font-size: 2.25em;
+    }
+
+    /* Header  */
+    #mainHeader {
+        display: none;
+    }
+    #mobileHeader {
+        height: auto;
+        display: block;
+        background-color: #000;
+    }
+    .headerContent {
+        display: flex;
+        padding: 1em 0;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .open {
+        color: #fff;
+        display: block;
+        font-size: 3em;
+        cursor: pointer;
+    }
+    #mobileNav {
+        top: 0;
+        left: 0;
+        width: 0;
+        z-index: 5;
+        height: 33vh;
+        display: block;
+        transition: 0.7s;
+        padding-top: .5em;
+        position: absolute;
+        overflow-x: hidden;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, .85);
+    }
+    #mobileNav a {
+        color: #fff;
+        display: block;
+        font-size: 1.5em;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 0.5em;
+        text-decoration: none;
+    }
+    #mobileNav a:first-child {
+        font-size: 4.25em;
+        padding-bottom: 0;
+    }
+    #mobileNav a:hover,
+    #mobileNav a:focus {
+        color: #ED8549;
+        transition: 0.3s;
+    }
+    .mobileLogo {
+        width: 43%;
+    }
+    .empty {
+        width: 44px;
+    }
+
+    /* Banner */
+    #mobileBanner {
+        height: 47vh;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        justify-content: center;
+        background-position: center;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+    }
+    .banner .mobileText {
+        width: 90%;
+        display: flex;
+        margin: 0  0 10px 15px;
+        flex-direction: column;
+    }
+    .banner .mobileText h1 {
+        color: #fff;
+        font-weight: 800;
+        font-size: 4em;
+        line-height: 70px;
+    }
+    .banner .mobileText a {
+        color: #ED8549;
+        font-weight: 400;
+        font-size: 1.15em;
+        margin-bottom: 1em;
+    }
+    .mobileText a .btn {
+        padding: 0.5em 3em;
+        border-radius: 25px;
+        border: 1px solid #ED8549;
+        background-color: transparent;
+    }
+    .mobileText a .btn:hover,
+    .mobileText a .btn:focus {
+        color: #fff;
+        background-color: #ED8549;
+        transition: color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
+    }
+
+    /* Get food fast - Not fast food */
+    .fourReasons {
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+    }
+    .fourReasons .reason {
+        margin-bottom: 1.25em;
+    }
+    .fourReasons div:last-child {
+        margin-bottom: 0;
+    }
+    .fourReasons .rsnText {
+        text-align: center;
+    }
+
+    /* How it works */
+    .worksBox {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .phone img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .phone {
+        width: 55%;
+        margin-bottom: 1.25em;
+    }
+
+    /* Locations */
+    .cities {
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+    }
+    .cities .city {
+        margin-bottom: 1.25em;
+    }
+    .cities #london {
+        margin-bottom: 0;
+    }
+    .cities .city .cityDetails {
+        text-align: center;
+    }
+    .cities .city .cityImg {
+        width: 80%;
+        margin: 0 auto 0.55em auto;
+    }
+    .cities .city .cityName {
+        font-size: 1.35em;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials .test {
+        width: 80%;
+        padding: 0;
+        margin-bottom: 2.5em;
+    }
+    .testimonials #milton {
+        margin-bottom: 0;
+    }
+    .customer figure {
+        width: 18%;
+    }
+
+    /* Start eating healthy today */
+    .packages {
+        flex-direction: column;
+    }
+    .packages .pkg {
+        margin-bottom: 2em;
+    }
+    .packages #starter {
+        margin-bottom: 0;
+    }
+    .packages .pkg .pkgTitle {
+        font-size: 1.35em;
+    }
+}

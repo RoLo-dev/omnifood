@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/queries.css">
   <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:100,400,800" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -14,9 +15,34 @@
 </head>
 
 <body>
-  <header id="top">
+  <header id="mobileHeader">
+    <div class="headerContent wrapper">
+      <span id="open" class="open">&#9776</span>
+      <div id="mobileNav">
+        <a href="javascript:void(0)" id="close" class="closeBtn">&times;</a>
+        <a href="#getFood">Food delivery</a>
+        <a href="#howItWorks">How it works</a>
+        <a href="#locations">Our cities</a>
+        <a href="#signUp">Sign up</a>
+      </div>
+      <div class="mobileLogo">
+        <img src="img/logo-white.png" class="pic" alt="Omnifood logo">
+      </div>
+      <div class="empty"></div>
+    </div>
+  </header>
 
-    <div id="nav" class="mainNav wrapper">
+  <div id="mobileBanner" class="banner">
+    <div class="mobileText">
+      <h1>Goodbye junk food. Hello super healthy meals.</h1>
+      <a href="#signUp"><button class="btn">I'm hungry</button></a>
+      <a href="#getFood"><button class="btn">Show me more</button></a>
+    </div>
+  </div>
+
+  <header id="mainHeader">
+
+    <div class="mainNav wrapper">
       <div class="logo">
         <img src="img/logo-white.png" alt="Omnifood logo">
       </div>
@@ -26,20 +52,6 @@
           <li><a href="#howItWorks">How it works</a></li>
           <li><a href="#locations">Our cities</a></li>
           <li><a href="#signUp">Sign up</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="mobileNav" class="mobileNav wrapper">
-      <div class="logo">
-        <img src="img/logo-white.png" alt="Omnifood logo">
-      </div>
-      <div class="links">
-        <ul>
-          <li><a href="#">Food delivery</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Our cities</a></li>
-          <li><a href="#">Sign up</a></li>
         </ul>
       </div>
     </div>
@@ -140,11 +152,11 @@
             </div>
           </div>
           <div class="list appStore">
-            <div class="ios">
-              <img src="img/download-app.svg" alt="App Store">
+            <div class="device">
+              <img src="img/download-app.svg" class="ios" alt="App Store">
             </div>
-            <div class="android">
-              <img src="img/download-app-android.png" alt="App Store">
+            <div class="device">
+              <img src="img/download-app-android.png" class="android" alt="App Store">
             </div>
           </div>
         </div>
@@ -201,7 +213,7 @@
           </div>
         </div>
 
-        <div class="city">
+        <div id="london" class="city">
           <div class="cityImg">
             <img src="img/london.jpg" class="pic" alt="city">
           </div>
@@ -248,7 +260,7 @@
           </div>
         </div>
 
-        <div class="test">
+        <div id="milton" class="test">
           <i class="fas fa-quote-left"></i>
           <p>I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!</p>
           <div class="customer">
@@ -298,7 +310,7 @@
           <a href=""><button>Sign up now</button></a>
         </div>
 
-        <div class="pkg">
+        <div id="starter" class="pkg">
           <h4 class="pkgTitle">Starter</h4>
           <p>
             19$ per meal<br>
@@ -318,6 +330,6 @@
   </section>
 
   
-  
+  <script src="JS/actions.js"></script>
 </body>
 </html>
