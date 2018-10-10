@@ -162,12 +162,9 @@ html {
   transform: scale(1.65);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-.meals img:hover {
-  opacity: 1;
-  transform: scale(1);
-  transition: transform 0.5s;
-}
-.meals img:active {
+.meals img:hover,
+.meals img:active,
+.meals img:focus {
   opacity: 1;
   transform: scale(1);
   transition: transform 0.5s;
