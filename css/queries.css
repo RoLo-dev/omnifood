@@ -64,6 +64,7 @@
     /* Header */
     #mainHeader {
         height: 75vh;
+        background-attachment: inherit;
     }
     .mainNav .logo {
         width: 25%;
@@ -191,7 +192,7 @@
 
     /* Banner */
     #mobileBanner {
-        height: 47vh;
+        height: 55vh;
         display: flex;
         align-items: center;
         background-size: cover;
@@ -208,7 +209,7 @@
     .banner .mobileText h1 {
         color: #fff;
         font-weight: 800;
-        font-size: 4em;
+        font-size: 3.5em;
         line-height: 70px;
     }
     .banner .mobileText a {
