@@ -197,7 +197,6 @@
         background-size: cover;
         justify-content: center;
         background-position: center;
-        background-attachment: fixed;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
     }
     .banner .mobileText {
