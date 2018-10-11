@@ -56,7 +56,7 @@
 
 
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 750px) {
     /* Universal Styles */
     .secTitle {
         font-size: 2.5em;
@@ -192,7 +192,7 @@
 
     /* Banner */
     #mobileBanner {
-        height: 80vh;
+        height: 90vh;
         display: flex;
         align-items: center;
         background-size: cover;
