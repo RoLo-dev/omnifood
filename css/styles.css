@@ -40,7 +40,6 @@ html {
 
 /* Header */
 #mainHeader {
-  display: block;
   height: 100vh;
   position: relative;
   background-size: cover;
