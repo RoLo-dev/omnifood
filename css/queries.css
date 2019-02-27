@@ -28,6 +28,9 @@
     }
 
     /* Header */
+    #mainHeader {
+        background-attachment: scroll;
+    }
     .mainNav .logo {
         width: 24%;
     }
@@ -49,6 +52,11 @@
     }
     .worksText .appStore .ios {
         width: 120%;
+    }
+
+    /* Testimonials */
+    #ourCustomers {
+        background-attachment: scroll;
     }
 }
 
@@ -286,14 +294,6 @@
     }
 
     /* Testimonials */
-    #ourCustomers {
-        top: 0;
-        left: 0;
-        visibility: visible;
-        z-index: -10;
-        overflow: hidden;
-        transform: translate3d(0px, 0px, 0px);
-    }
     .testimonials {
         flex-direction: column;
         align-items: center;
